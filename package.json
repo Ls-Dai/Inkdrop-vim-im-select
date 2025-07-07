@@ -1,0 +1,19 @@
+{
+  "name": "vim-im-select",
+  "main": "./lib/vim-im-select",
+  "version": "0.0.1",
+  "description": "Automatically switches input method when Vim mode changes in Inkdrop.",
+  "keywords": [
+    "inkdrop",
+    "vim",
+    "input-method",
+    "input-source",
+    "plugin"
+  ],
+  "repository": "https://github.com/inkdropapp/vim-im-select",
+  "license": "MIT",
+  "engines": {
+    "inkdrop": "^5.3.1"
+  },
+  "dependencies": {}
+}

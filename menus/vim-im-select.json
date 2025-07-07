@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Plugins",
+      "submenu": [
+        {
+          "label": "vim-im-select",
+          "submenu": [
+            {
+              "label": "undefined",
+              "command": "vim-im-select:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
