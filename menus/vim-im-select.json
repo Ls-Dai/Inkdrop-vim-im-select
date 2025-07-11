@@ -7,8 +7,14 @@
           "label": "vim-im-select",
           "submenu": [
             {
-              "label": "undefined",
-              "command": "vim-im-select:toggle"
+              "label": "Enable vim-im-select",
+              "command": "vim-im-select:toggle",
+              "visible": true
+            },
+            {
+              "label": "Disable vim-im-select",
+              "command": "vim-im-select:toggle",
+              "visible": false
             }
           ]
         }

@@ -1,6 +1,6 @@
 {
   "name": "vim-im-select",
-  "main": "./lib/vim-im-select",
+  "main": "./lib/index",
   "version": "0.0.1",
   "description": "Automatically switches input method when Vim mode changes in Inkdrop.",
   "keywords": [
