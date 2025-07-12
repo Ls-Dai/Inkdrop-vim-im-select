@@ -1,97 +1,46 @@
 # vim-im-select for Inkdrop
 
-> ✨ **Improve Inkdrop's Vim mode experience with automatic input method switching.**
-> Inspired by [vim-im-select](https://github.com/daipeihust/im-select)
+> ✨ **Seamlessly switch input methods in Inkdrop's Vim mode.**
+> Inspired by [vim-im-select](https://github.com/daipeihust/im-select) and [im-select](https://github.com/daipeihust/im-select)
 
----
+### 🧠 What It Does
 
-### 🧠 What This Plugin Does
+This plugin enhances the Vim mode (`inkdrop-vim`) experience in Inkdrop by automatically switching your input method (IME) when entering or leaving Insert Mode.
 
-This Inkdrop plugin improves the experience of using Vim mode (`inkdrop-vim`) with multilingual input methods (IMEs), by automatically switching between your default input method and your previously used one.
+Without it, users typing in a non-English IME must manually switch to English when entering Normal Mode, and then switch back when re-entering Insert Mode. This can interrupt your workflow.
 
-It mimics key behaviors from `vim-im-select`, adapted for Inkdrop:
+With `vim-im-select`, the plugin automatically:
 
-* 📝 Switch to **default IM** when entering Normal mode
-* 🔤 Switch back to **previous IM** when entering Insert mode
-* 🪟 On app focus:
+* Switches to English when you enter Normal Mode
+* Restores your previous IME when you return to Insert Mode
 
-  * If currently in Normal mode: switch to default IM
-  * Otherwise: do nothing
-* 🎯 On app blur:
-
-  * If currently in Normal mode: restore previous IM
-  * Otherwise: do nothing
-
----
+No more manual toggling—just focus on writing and editing.
 
 ### 🧩 Requirements
 
-* macOS with [`im-select`](https://github.com/daipeihust/im-select) installed
-* [`inkdrop-vim`](https://github.com/inkdropapp/inkdrop-vim) enabled
-* Node.js bindings to system input source (this plugin uses `im-select` under the hood)
+* **MacOS with Apple Silicon (M series)**
+  (Support for Intel Macs and Windows is planned—`im-select` already supports them.)
 
-Linux and Windows support is theoretically possible if `im-select` or an equivalent is present and accessible.
+### 📦 Installation & Setup
 
----
-
-### 🔧 Configuration (Coming Soon)
-
-Currently, the plugin uses `im-select` with hardcoded default and last input methods. Future versions may support:
-
-* Custom default IM key
-* Custom path to `im-select`
-* Focus event toggle
-* Timeout protection (avoid flicker when IM switching triggers extra focus events)
-
----
-
-### 📦 Installation
-
-1. Install [`im-select`](https://github.com/daipeihust/im-select)
-
-   ```bash
-   brew install im-select
-   ```
-
-2. In Inkdrop, go to `Preferences → Plugins → Install Plugin` and search for:
-
-   ```
-   vim-im-select
-   ```
-
----
+No need to install `im-select` manually.
+This plugin will automatically download and manage a copy for local use.
 
 ### 🖱️ Commands
 
-The plugin adds two commands to Inkdrop’s command palette:
+Once installed, you’ll find a new command in the Inkdrop command palette:
 
-* `vim-im-select:enable` — Enable IM auto-switching
-* `vim-im-select:disable` — Disable IM auto-switching
+* `vim-im-select:toggle` — Enable or disable automatic IM switching
 
 You can also toggle from the menu:
-**Plugins → vim-im-select → Enable/Disable vim-im-select**
+**Plugins → vim-im-select → Enable/Disable**
 
----
+### 🤝 Credits
 
-### 🤝 Credit
+Inspired by [vim-im-select](https://github.com/daipeihust/im-select) by [daipeihust](https://github.com/daipeihust), which provides excellent IME switching in Vim/Neovim.
 
-This plugin is heavily inspired by [vim-im-select](https://github.com/daipeihust/im-select), which provides a fantastic IM switching experience in Neovim and Vim.
-
-Original plugin authored by [daipeihust](https://github.com/daipeihust).
-We just adapted the idea to Inkdrop's React + Electron environment.
-
----
+This version is adapted for Inkdrop’s React + Electron environment.
 
 ### 📄 License
 
 MIT
-
----
-
-如果你愿意，我们还可以加：
-
-* GIF 预览动图（展示自动切换 IM 效果）
-* Mac 下 `im-select` 安装问题 FAQ（常见权限、PATH 问题）
-* 插件开发者名字或链接
-
-你可以将这个 `README.md` 直接作为插件根目录的 README 文件，或发布到 npm/github。需要我自动帮你生成 demo 图、插件徽章等，可以随时说！
