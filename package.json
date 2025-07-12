@@ -10,7 +10,10 @@
     "input-source",
     "plugin"
   ],
-  "repository": "https://github.com/Ls-Dai/Inkdrop-vim-im-select/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ls-Dai/Inkdrop-vim-im-select.git"
+  },
   "license": "MIT",
   "engines": {
     "inkdrop": "^5.3.1"
