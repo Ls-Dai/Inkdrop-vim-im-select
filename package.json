@@ -1,0 +1,19 @@
+{
+  "name": "vim-im-select",
+  "main": "./lib/index",
+  "version": "0.1.0",
+  "description": "Automatically switches input methods when Vim mode changes between Insert and Normal.",
+  "keywords": [
+    "inkdrop",
+    "vim",
+    "input-method",
+    "input-source",
+    "plugin"
+  ],
+  "repository": "https://github.com/Ls-Dai/Inkdrop-vim-im-select/",
+  "license": "MIT",
+  "engines": {
+    "inkdrop": "^5.3.1"
+  },
+  "dependencies": {}
+}
